@@ -16,4 +16,10 @@
     <PackageReference Include="Microsoft.Extensions.Configuration.FileExtensions" Version="9.0.0" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Content Include="bin\Debug\net9.0\appsettings.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
 </Project>
