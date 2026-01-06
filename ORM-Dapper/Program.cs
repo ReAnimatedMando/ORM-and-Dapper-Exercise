@@ -1,4 +1,6 @@
-﻿using Microsoft.Extensions.Configuration;
+﻿using System.Data;
+using Microsoft.Extensions.Configuration;
+using MySql.Data.MySqlClient;
 
 namespace ORM_Dapper
 {
@@ -12,6 +14,8 @@ namespace ORM_Dapper
                 .Build();
 
             string connString = config.GetConnectionString("DefaultConnection");
+
+            IDbConnection conn = new MySqlConnection(connString);
         }
     }
 }
