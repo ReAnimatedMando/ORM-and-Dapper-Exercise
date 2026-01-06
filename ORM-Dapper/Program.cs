@@ -16,6 +16,8 @@ namespace ORM_Dapper
             string connString = config.GetConnectionString("DefaultConnection");
 
             IDbConnection conn = new MySqlConnection(connString);
+
+            var departmentRepo = new DapperDepartmentRepository(conn);
         }
     }
 }
